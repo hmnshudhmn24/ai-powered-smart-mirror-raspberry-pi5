@@ -1,6 +1,7 @@
 # AI-Powered Smart Mirror 🪞
 
-Turn your Raspberry Pi 5 into a futuristic smart mirror that shows the weather, date/time, and lets you ask questions using OpenAI's GPT model.
+This project turns your Raspberry Pi 5 into an intelligent smart mirror that combines utility with innovation. It displays real-time weather, date, and time, and uses OpenAI’s GPT-4 to answer your voice or text-based questions, acting as a personal assistant embedded in a mirror. The interface is built with Flask and HTML/CSS and can be customized easily. You can also connect a PIR motion sensor to automatically wake the display when someone is nearby. It’s a perfect blend of AI, IoT, and user-centric design for modern home setups.
+
 
 ## 🔧 Features
 
