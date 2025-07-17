@@ -48,13 +48,3 @@ This project uses GPT-4 API. To ask something, click "Ask Mirror" and input your
 ## 🌐 Weather Data
 
 Powered by [WeatherAPI.com](https://www.weatherapi.com/). Sign up and get a free API key.
-
-## 🧪 Optional: PIR Motion Sensor
-
-You can use a PIR sensor to auto wake up the display using a Python script that turns on/off HDMI based on motion.
-
-MIT
-
----
-
-Built with ❤️ using Raspberry Pi 5.
