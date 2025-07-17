@@ -53,12 +53,6 @@ Powered by [WeatherAPI.com](https://www.weatherapi.com/). Sign up and get a free
 
 You can use a PIR sensor to auto wake up the display using a Python script that turns on/off HDMI based on motion.
 
-## 📷 Screenshot
-
-![UI Preview](preview.png)
-
-## 📜 License
-
 MIT
 
 ---
