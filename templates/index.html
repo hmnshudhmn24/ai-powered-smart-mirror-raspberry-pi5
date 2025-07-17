@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Mirror</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+    }
+    .weather {
+      margin-top: 20px;
+    }
+    .voice-box {
+      margin-top: 40px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Smart Mirror</h1>
+  <div id="datetime">{{ time }}</div>
+  <div class="weather">
+    <h2>Weather in {{ weather.city }}</h2>
+    <p>{{ weather.temp_c }}°C - {{ weather.condition }}</p>
+    <img src="{{ weather.icon }}" alt="weather icon">
+  </div>
+
+  <div class="voice-box">
+    <button onclick="askAI()">Ask Mirror</button>
+    <p id="response"></p>
+  </div>
+
+  <script>
+    async function askAI() {
+      const prompt = prompt("What would you like to ask?");
+      const res = await fetch("/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt })
+      });
+      const data = await res.json();
+      document.getElementById("response").innerText = data.response;
+    }
+  </script>
+</body>
+</html>
